@@ -24,7 +24,7 @@
 }
 @font-face {
     font-family: 'Bebas Neue';
-    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('/fonts/bebasneuebold.woff2') format('woff2'), url('/fonts/bebasneuebold.woff') format('woff'), url('/fonts/bebasneuebold.ttf') format('truetype');
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('fonts/bebasneuebold.woff2') format('woff2'), url('fonts/bebasneuebold.woff') format('woff'), url('fonts/bebasneuebold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
