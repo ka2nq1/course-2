@@ -1,0 +1,207 @@
+:root {
+    --title-font: 'Bebas Neue';
+    --content-font: 'Montserrat';
+    --main-text-color: #FFFFFF;
+    --second-text-color: #4324FF;
+    --index: calc(1vw + 1vh);
+}
+
+h1, h2, h3 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: var(--main-text-color);
+}
+
+h1 *, h2 *, h3 * {
+    font-family: var(--title-font)!important;
+    font-weight: 700!important;
+    color: var(--second-text-color)!important;
+}
+
+p, span, button {
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: var(--main-text-color);
+}
+
+body {
+    background: #0C0C0C;
+    padding: 45px 0;
+}
+
+.container {
+    max-width: 1285px;
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.mainButton {
+    background: linear-gradient(258.35deg, #4324FF 42.6%, #2A179F 101.59%);
+    box-shadow: 0px 1px 0px #5D42FF, 0px 4px 0px #351EC6;
+    border-radius: 10px;
+    padding: 38px 48px 30px 48px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+.mainButton:hover {
+    background: linear-gradient(258.35deg, #2b11d6 42.6%, #1c08a0 101.59%);
+}
+
+/* ==============================HERO============================== */
+.hero {
+    background-image: url("/images/heroBg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 187px;
+    z-index: 1;
+    min-width: 1100px;
+}
+
+.hero .blueEllipse {
+    position: absolute;
+    top: 439px;
+    left: calc(50% - 200px + 1vw * 12);
+    width: 356px;
+    background: #4324FF;
+    filter: blur(175px);
+    z-index: -1;
+}
+
+.hero .expert {
+    background: linear-gradient(88.93deg, rgba(74, 73, 73, 0.3) 12.64%, rgba(162, 157, 157, 0.3) 100.85%);
+    border: 2px solid #363636;
+    padding: 45px 32px 35px 32px;
+    border-radius: 15px;
+    position: absolute;
+    top: 326px;
+    left: calc(50% + 170px + 1vw * 12);
+    backdrop-filter: blur(22.5px);
+    min-width: 250px;
+    z-index: 1;
+}
+
+.hero .starIcon {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+
+.hero .expert h3 {
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.hero .expert p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.hero .person {
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 550px + 1vw * 12);
+    z-index: 1;
+}
+
+.hero .cart {
+    position: absolute;
+    top: 350px;
+    left: calc(50% - 900px + 1vw * 12);
+    z-index: 1;
+}
+
+.hero .logoWrap {
+    margin-bottom: 133px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero .logoWrap h3 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.hero .logoWrap span {
+    display: none;
+}
+
+.hero .title {
+    font-size: 130px;
+    line-height: 120px;
+    margin-bottom: 23px;
+}
+
+.hero .content {
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+    margin-bottom: 77px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .arrowIcon {
+    height: fit-content;
+}
+
+.hero .content p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 430px;
+}
+
+.hero .content p span {
+    font-weight: 600;
+}
+
+.hero .signUpWrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .scrollIcon {
+    margin-right: 66px;
+}
+
+.hero .mainButton {
+    margin-right: 21px;
+}
+
+.hero .forNewbee {
+    width: 231px;
+    background: linear-gradient(258.48deg, #2C2C2C 42.68%, #272727 101.78%);
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.055em;
+    padding: 29px 40px 25px 40px;
+}
+
+/* =========================HERO MEDIA========================= */
+@media (max-width: 1100px) {
+    .hero .person {
+        left: calc(50% - 340px);
+        width: 85%;
+        top: 40px;
+    }
+    
+    .hero .cart {
+        left: calc(50% - 800px);
+        width: auto;
+    }
+
+    .hero .expert {
+        left: auto;
+        right: 40px; 
+    }
+}

@@ -1,0 +1,167 @@
+@media (max-width: 600px) {
+    body {
+        padding: 25px 0;
+    }
+    .container {
+        max-width: 600px;
+        padding: 0 25px;
+    }
+
+    .hero {
+        min-width: 0;
+        overflow: auto;
+        background-size: 140%;
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+    .hero .person {
+        display: none;
+    }
+    
+    .hero .mobilePerson {
+        background-image: url("/images/person.png");
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: 60% calc(1vw * 2 - 20px);
+        position: absolute;
+        width: calc(100% - 50px);
+        height: 750px;
+        top: 0;
+        z-index: 1;
+    }
+
+    .hero .expert {
+        top: 15%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        width: calc(100% - 50px);
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero .expert h3 {
+        font-weight: 400;
+        width: 70px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .hero .expert p {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .hero .starIcon {
+        width: 21px;
+        top: -12px;
+        left: 18px;
+    }
+
+    .hero .cart {
+        display: none;
+    }
+
+    .hero .scrollIcon {
+        display: none;
+    }
+
+    .hero .mainButton {
+        margin-right: 0;
+        padding: 29px 36px 26px 36px;
+        font-size: 12px;
+        z-index: 1;
+    }
+
+    .hero .forNewbee br {
+        display: none;
+    }
+
+    .hero .forNewbee {
+        transform: translateY(-3px);
+        width: 170px;
+        font-size: 8px;
+        padding: 20px 16px 15px 16px;
+        text-align: center;
+        line-height: 18px;
+    }
+
+    .hero .signUpWrap {
+        flex-direction: column;
+    }
+
+    .hero .blueEllipse {
+        width: 166px;
+        background: #4324FF;
+        filter: blur(175px);
+        top: 20%;
+        right: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero .logoWrap {
+        gap: 15%;
+        margin-bottom: 70%;
+    }
+
+    .hero .logoWrap h3 {
+        font-size: 20px;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .hero .logoWrap span {
+        font-family: 'Montserrat'!important;
+        color: #5B5B5B!important;
+        display: block;
+        font-weight: 500!important;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .hero .logo {
+        width: 99.67px;
+        height: 37px;
+    }
+    .hero .title {
+        font-size: calc(1vw * 13);
+        line-height: calc(1vw * 13);
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero .content {
+        margin-bottom: 30px;
+    }
+
+    .hero .content p {
+        font-weight: 400;
+        font-size: calc(1vw * 4);
+        line-height: calc(1vw * 6);
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero .arrowIcon {
+        display: none;
+    }
+}
+
+@media (max-width: 365px) {
+    .hero .logoWrap {
+        gap: 10%;
+    }
+    .hero .logoWrap h3 {
+        font-size: 15px;
+    }
+    .hero .mobilePerson {
+        background-size: 120%;
+        background-position: 76% calc(1vw * 2 + 20px);
+    }
+}
