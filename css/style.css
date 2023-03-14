@@ -57,7 +57,7 @@ body {
 
 /* ==============================HERO============================== */
 .hero {
-    background-image: url("/images/heroBg.png");
+    background-image: url("../images/heroBg.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -387,11 +387,14 @@ body {
     margin-bottom: 183px;
 }
 
+.advantages {
+    overflow: hidden;
+}
+
 .advantages .title {
     text-align: center;
     font-size: 40px;
     line-height: 45px;
-    overflow: hidden;
 }
 
 .advantages .subTitle {
@@ -456,21 +459,21 @@ body {
     }
 }
 
-.advantages li:nth-child(1)::before {
+.advantages li:nth-child(1):before {
     content: "";
     position: absolute;
     display: block;
     left: -50px;
     top: -200px;
     z-index: -1;
-    background-image: url("/images/advantagesBox.png");
+    background-image: url("../images/advantagesBox.png");
     background-position: center;
     background-size: inherit;
     width: 100%;
     height: 100%;
 }
 
-.advantages li:nth-child(2)::before {
+.advantages li:nth-child(2):before {
     content: "";
     position: absolute;
     display: block;
@@ -478,14 +481,14 @@ body {
     top: -205px;
     background-repeat: no-repeat;
     z-index: -1;
-    background-image: url("/images/advantagesComp.png");
+    background-image: url("../images/advantagesComp.png");
     background-position: left;
     background-size: inherit;
     width: 100vw;
     height: 100%;
 }
 
-.advantages li:nth-child(3)::before {
+.advantages li:nth-child(3):before {
     content: "";
     position: absolute;
     display: block;
@@ -493,7 +496,7 @@ body {
     top: -228px;
     background-repeat: no-repeat;
     z-index: -1;
-    background-image: url("/images/advantagesCar.png");
+    background-image: url("../images/advantagesCar.png");
     background-position: left;
     background-size: inherit;
     width: 100vw;
