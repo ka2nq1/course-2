@@ -456,7 +456,7 @@ body {
     }
 }
 
-.advantages li:nth-child(1)::before {
+.advantages li:nth-child(1):before {
     content: "";
     position: absolute;
     display: block;
@@ -470,7 +470,7 @@ body {
     height: 100%;
 }
 
-.advantages li:nth-child(2)::before {
+.advantages li:nth-child(2):before {
     content: "";
     position: absolute;
     display: block;
@@ -485,7 +485,7 @@ body {
     height: 100%;
 }
 
-.advantages li:nth-child(3)::before {
+.advantages li:nth-child(3):before {
     content: "";
     position: absolute;
     display: block;
