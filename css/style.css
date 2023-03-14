@@ -235,7 +235,7 @@ body {
     }
     
     .hero .mobilePerson {
-        background-image: url("/images/person.png");
+        background-image: url("../images/person.png");
         background-size: 140%;
         background-repeat: no-repeat;
         background-position: 60% calc(1vw * 2 - 20px);
