@@ -24,6 +24,14 @@ p, span, button {
     color: var(--main-text-color);
 }
 
+.subTitle {
+    display: inline;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #7C7C7C;
+}
+
 body {
     background: #0C0C0C;
     padding: 45px 0;
@@ -383,12 +391,13 @@ body {
 
 /* ==============================ADVANTAGES============================== */
 
-.titleWrap {
+.advantages .titleWrap {
     margin-bottom: 183px;
 }
 
 .advantages {
     overflow: hidden;
+    margin-bottom: 55px;
 }
 
 .advantages .title {
@@ -397,12 +406,8 @@ body {
     line-height: 45px;
 }
 
-.advantages .subTitle {
-    display: none;
-}
-
 @media (min-width: 600px) {    
-    .titleWrap {
+    .advantages .titleWrap {
         display: inline-block;
         position: relative;
         margin-bottom: 70px;
@@ -421,14 +426,10 @@ body {
     }
     
     .advantages .subTitle {
-        display: inline;
         position: absolute;
         top: 36px;
         right: -400px;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        color: #7C7C7C;
     }
     @media (max-width: 1250px) {
         .advantages .subTitle {
@@ -543,6 +544,16 @@ body {
     text-fill-color: transparent;
 }
 
+.advantages ul li:nth-child(2) h3 span br:nth-child(2),
+.advantages ul li:nth-child(3) h3 br:nth-child(3),
+.advantages ul li:nth-child(3) .secondText br:nth-child(even) {
+    display: none;
+}
+
+.advantages ul li:nth-child(3) .secondText br:nth-child(odd) {
+    display: block;
+}
+
 @media (max-width: 390px) {
     .advantages ul .number {
         left: -4px;
@@ -557,6 +568,12 @@ body {
 }
 
 @media (min-width: 600px) {
+
+    .advantages {
+        min-width: 1100px;
+        margin-bottom: 150px;
+    }
+    
     .advantages ul {
         max-width: inherit;
         align-items: flex-end;
@@ -564,9 +581,187 @@ body {
     }
     
     .advantages ul li {
-        position: relative;
         max-width: inherit;
-        width: 100%;
+        width: auto;
+    }
+
+    .advantages ul p {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 23px 40px;
+    }
+    
+    .advantages ul h3 {
+        font-size: 50px;
+        line-height: 54px;
+        margin-bottom: 35px;
+    }
+
+    .advantages ul li:nth-child(2) h3 span br:nth-child(1),
+    .advantages ul li:nth-child(1) h3 span br:nth-child(1),
+    .advantages ul li:nth-child(2) h3 span br:nth-child(3),
+    .advantages ul li:nth-child(3) h3 br:nth-child(2),
+    .advantages ul li:nth-child(3) h3 span br:nth-child(1),
+    .advantages ul li:nth-child(3) .secondText br:nth-child(odd) {
+        display: none;
+    }
+
+    .advantages ul li:nth-child(2) h3 span br:nth-child(2),
+    .advantages ul li:nth-child(3) h3 br:nth-child(3),
+    .advantages ul li:nth-child(3) .secondText br:nth-child(even) {
+        display: block;
+    }
+
+    .advantages ul .number {
+        top: 96px;
+    }
+
+    .advantages ul .secondText {
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 100px;
+        display: inline-block;
+    }
+
+    .advantages li:nth-child(odd) {
+        align-self: start;
+        margin-left: 100px;
+    }
+
+    .advantages li:nth-child(1):before {
+        left: 600px;
+        top: 0;
+        background-image: url("../images/advantagesBoxDesk.png");
+    }
+
+    .advantages li:nth-child(2):before {
+        left: -750px;
+        top: 0;
+        background-image: url("../images/advantagesCompDesk.png");
+    }
+
+    .advantages li:nth-child(3):before {
+        left: 50px;
+        top: -40px;
+        background-image: url("../images/advantagesCarDesk.png");
+    }
+}
+
+/* ====================================forWhom====================================== */
+
+.forWhom .titleWrap {
+    display: block;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.forWhom .title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+@media (max-width: 599px) {
+    .subTitle {
+        display: none;
+    }
+}
+
+.forWhom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.forWhom li {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 10px;
+    min-height: 175px;
+    padding: 30px 26px 35px 26px;
+}
+
+.forWhom ul .name {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 95px;
+    margin-bottom: 21px;
+    color: #141414; 
+}
+
+.forWhom ul .text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 285px;
+    color: #141414;
+}
+
+.forWhom ul .stars {
+    position: absolute;
+    right: 26px;
+    top: 35px;
+}
+
+@media (min-width: 600px) {
+
+    .forWhom .titleWrap {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .forWhom .title {
+        font-size: 100px;
+        line-height: 110px;
+        text-align: left;
+    }
+
+    .forWhom .title span {
+        margin-left: 90px;
+    }
+
+    .forWhom .subTitle {
+        position: absolute;
+        right: 0;
+        top: 40px;
+    }
+
+    .forWhom ul {
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: row
+    }
+    .forWhom li {
+        min-height: 260px;
+        padding: 60px 45px;
+        width: calc(50% - 15px);
+    }
+
+    .forWhom ul .name {
+        font-size: 50px;
+        line-height: 54px;
+        padding-right: 120px;
+        margin-bottom: 15px;
+    }
+
+    .forWhom ul .text {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 380px;
+    }
+
+    .forWhom ul .stars {
+        position: absolute;
+        right: 45px;
+        top: 60px;
+        width: 100px;
+        height: 20px;
     }
 }
 
