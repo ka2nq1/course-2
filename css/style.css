@@ -894,7 +894,7 @@ body {
     }
 
     .results ul h3 {
-        min-width: inherit;
+        min-width: fit-content;
         max-width: 344px!important;
         font-size: 50px;
         line-height: 54px;
@@ -1184,5 +1184,116 @@ body {
         font-size: 50px;
         height: 45px;
         margin-top: -10px;
+    }
+}
+
+/* ==============================PROCESS============================== */
+
+.process {
+    margin-bottom: 60px;
+}
+
+.process .title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.process ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.process li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 23px;
+    max-width: 337px;
+    padding-right: 37px;
+}
+
+.process ul img {
+    margin-right: 20px;
+}
+
+.process .imgWrap {
+    height: 280px;
+    background-image: url("../images/mobileProcessImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media (min-width: 490px) {
+    .process .imgWrap{
+        background-size: contain;
+    }
+}
+
+.process .infoWrap {
+    font-size: 8px;
+    line-height: 11px;
+    width: 160px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+@media (min-width: 600px) {
+    .process {
+        margin-bottom: 135px;
+    }
+
+    .process .container {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .process .title {
+        font-size: 100px;
+        line-height: 110px;
+        margin-bottom: 22px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .process ul {
+        margin: 0 0 0 45px;
+    }
+
+    .process li {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 500px;
+    }
+
+    .process .imgWrap {
+        width: calc(100% - 500px);
+        background-size: 1150px;
+        background-position: -300px -156px;
+        margin-right: -45px;
+        justify-content: flex-start;
+        height: auto;
+        background-image: url("../images/deskProcessImg.png");
+    }
+
+    .process .infoWrap {
+        margin-left: 80px;
+        font-size: 15px;
+        line-height: 20px;
+        width: 300px;
+    }
+
+    .process .infoWrap img {
+        width: 25px;
+        margin-top: 3px;
     }
 }
