@@ -1318,7 +1318,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .rates .item {
@@ -1389,6 +1389,19 @@ body {
 
 .rates .disable p::before {
     background-color: #979797!important;
+}
+
+.rates .item .golden span {
+    color: #EBD939;
+}
+
+.rates .item .golden p::before {
+    border-radius: 0;
+    height: 19px;
+    width: 19px;
+    background-image: url("../images/goldenStar.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
 }
 
 .rates .item .uniq {
@@ -1610,9 +1623,9 @@ body {
     content: '';
     display: block;
     position: absolute;
-    border-left: 25px solid;
+    border-left: 25px solid transparent;
     border-bottom: 10px solid #141414;
-    top: -10px;
+    top: -9px;
     right: 28%;
 }
 
@@ -1646,5 +1659,138 @@ body {
 @media (min-width: 600px) {
     .rates {
         margin-bottom: 150px;
+    }
+
+    .rates .titleWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .rates .titleWrap .title {
+        font-size: 100px;
+    }
+
+    .rates .head {
+        padding: 50px 43px 29px 43px;
+    }
+
+    .rates .head h3 {
+        font-size: 50px;
+        line-height: 39px;
+    }
+
+    .rates .head p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .rates .list {
+        flex-direction: row;
+    }
+
+    .rates .item ul {
+        font-size: 16px;
+    }
+
+    .rates .mentor {
+        padding: 73px 500px 60px 70px;
+        position: relative;
+        height: 687px;
+        min-width: 1074px;
+    }
+
+    .rates .mentor h3 {
+        text-align: left;
+        font-size: 70px;
+        line-height: 70px;
+        max-width: 419px;
+        margin-bottom: 33px;
+    }
+
+    .rates .spikelets {
+        position: absolute;
+        justify-content: flex-start;
+        top: 80px;
+        left: 269px;
+    }
+
+    .rates .spikelets img {
+        width: 23px;
+    }
+
+    .rates .spikelets p {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 208px;
+    }
+
+    .rates .privilege {
+        margin-left: 0;
+        justify-content: flex-start;
+        gap: 38px;
+        margin-bottom: 46px;
+    }
+
+    .rates .privilege img {
+        width: 38px;
+    }
+
+    .rates .privilege p,
+    .rates .privilege span {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .rates .mentor .price {
+        display: inline-block;
+        font-size: 70px;
+        line-height: 70px;
+        margin: 30px 42px 0 79px;
+    }
+
+    .rates .mentor a {
+        display: inline-block;
+        font-size: 15px;
+        transform: translateY(-20px);
+    }
+
+    .rates .mobilePersonBg {
+        display: none;
+    }
+
+    .rates .oneByOne {
+        display: none;
+    }
+
+    .deskPersonBg {
+        width: 495px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #ffff;
+        border-radius: 15px;
+    }
+
+    .rates .deskPersonBg .oneByOne {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        font-size: 18px;
+        line-height: 20px;
+        left: -40px;
+        max-width: 226px;
+        padding: 24px 40px;
+    }
+
+    .rates .deskPersonBg img {
+        border-radius: 15px;
+    }
+
+    .rates .item:nth-child(1) ul,
+    .rates .item:nth-child(2) ul {
+        margin-bottom: 128px;
     }
 }
