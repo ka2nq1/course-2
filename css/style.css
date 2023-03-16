@@ -927,35 +927,118 @@ body {
     display: flex;
     flex-direction: column;
     gap: 33px;
-    height: 500px;
+}
+
+.program .options {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 9px;
+    top: -12px;
+    width: 297px;
+    right: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    font-family: 'Montserrat';
+    font-size: 8px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.program .options svg {
+    position: absolute;
+    right: -5px;
+    top: 4px;
+}
+
+@media (max-width: 360px) {
+    .program .options {
+        left: 0;
+        right: 0;
+        transform: translateX(0);
+        width: auto;
+    }
+}
+
+.program .options div {
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(7.5px);
+    width: 93px;
+    height: 26px;
+    color: #ffff;
+    border-radius: 150px;
 }
 
 .program .list > li {
+    position: relative;
     background: #0C0C0C;
     border: 1px solid #4E4E4E;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.program .list > li:nth-last-child(1) .moduleWrap,
+.program .list > li:nth-last-child(2) .moduleWrap {
+    background: #7C2CFF!important;
+}
+
+.program .list > li:hover .moduleWrap{
+    transition: 0.5s;
+    background: #4324FF;
 }
 
 .program .list > .active .moduleWrap {
     transition: 0.5s;
-    /* max-height: 300px; */
     background: #4324FF;
 }
 
 .program .programDropdown {
     max-height: 0px;
     overflow: hidden;
+    padding: 0;
+    transition: max-height 0.5s;
+}
+
+.program .programDropdown > * {
+    padding: 0 27px 0 27px;
+    margin: 25px 0;
+}
+
+.program .dropdownFirstList {
+    margin-top: 40px;
 }
 
 .program .list > .active .programDropdown {
-    transition: 0.5s;
     max-height: 450px;
+    /* padding: 20px 27px 40px 27px; */
 }
 
 .program .moduleWrap {
     /* background: #4324FF; */
     border-radius: 7px;
     padding: 40px 27px;
+}
+
+.program ol {
+    padding: 0;
+    font-family: var(--content-font);
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.program ol li {
+    margin: 20px 0 0 20px;
+}
+
+.programDropdown h3 {
+    font-size: 28px;
+    height: 25px;
 }
 
 .program .module {
@@ -983,7 +1066,6 @@ body {
     line-height: 20px;
     text-align: center;
     text-decoration-line: underline;
-    cursor: pointer;
 }
 
 @media (min-width: 600px) {
