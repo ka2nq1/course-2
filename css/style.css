@@ -968,10 +968,12 @@ body {
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.61);
     backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
     width: 93px;
     height: 26px;
     color: #ffff;
     border-radius: 150px;
+    position: relative;
 }
 
 .program .list > li {
@@ -1655,6 +1657,10 @@ body {
     color: #141414;
 }
 
+.rates .deskPersonBg {
+    display: none;
+}
+
 
 @media (min-width: 600px) {
     .rates {
@@ -1764,7 +1770,8 @@ body {
         display: none;
     }
 
-    .deskPersonBg {
+    .rates .deskPersonBg {
+        display: block;
         width: 495px;
         height: 100%;
         position: absolute;
