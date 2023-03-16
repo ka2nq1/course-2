@@ -946,6 +946,7 @@ body {
     text-align: center;
     letter-spacing: 0.13em;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .program .options svg {
@@ -1120,7 +1121,6 @@ body {
     
     .program .options {
         width: 400px;
-        z-index: 1;
         gap: 22px;
         right: 100px;
         transform: translate(0, 0);
