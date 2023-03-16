@@ -1297,3 +1297,354 @@ body {
         margin-top: 3px;
     }
 }
+
+/* ==============================RATES============================== */
+
+.rates {
+    margin-bottom: 60px;
+}
+
+.rates .titleWrap {
+    margin-bottom: 18px;
+}
+
+.rates .title {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.rates .list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.rates .item {
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 55px;
+}
+
+.rates .item:nth-child(1) {
+    border: 1px solid #FFFFFF;
+}
+.rates .item:nth-child(2) {
+    border: 1px solid #E9D734;
+}
+.rates .item:nth-child(3) {
+    border: 1px solid #7C2CFF;
+}
+
+.rates .head {
+    padding: 35px 31px 27px 31px;
+    margin-bottom: 25px;
+}
+
+.rates .head h3 {
+    font-size: 28px;
+    height: 28px;
+}
+
+.rates .head p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.rates .item ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 31px;
+    color: #ffff;
+    font-size: 14px;
+    line-height: 23px;
+    gap: 25px;
+    margin-bottom: 34px;
+}
+
+.rates .item li {
+    padding-left: 30px;
+}
+
+.rates .item li p {
+    position: relative;
+}
+
+.rates .item li p::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: -28px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4324FF;
+}
+
+.rates .disable p {
+    color: #979797;
+}
+
+.rates .disable p::before {
+    background-color: #979797!important;
+}
+
+.rates .item .uniq {
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 0 -10px;
+}
+
+.rates .item .uniq p {
+    max-width: 230px;
+}
+
+.rates .item .uniq p::before {
+    left: -28px;
+    top: 4px;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    height: 19px;
+    width: 19px;
+    background-color: transparent;
+}
+
+.rates .item:nth-child(1) .uniq {
+    background: linear-gradient(86.03deg, #979797 1.77%, #DCDCDC 92.08%);
+}
+
+.rates .item:nth-child(2) .uniq {
+    background: linear-gradient(86.03deg, #E9D734 1.77%, #FFF06A 92.08%);
+}
+
+.rates .item:nth-child(3) .uniq {
+    background: linear-gradient(86.03deg, #7C2CFF 1.77%, #9C60FF 92.08%);
+}
+
+.rates .item:nth-child(2) .uniq p {
+    color: #141414;
+}
+
+.rates .item:nth-child(1) .uniq p::before {
+    background-image: url("../images/uniqIconFirst.svg");
+}
+
+.rates .item:nth-child(2) .uniq p::before {
+    background-image: url("../images/uniqIconSec.svg");
+}
+
+.rates .item:nth-child(3) .uniq p::before {
+    background-image: url("../images/uniqIconTh.svg");
+}
+
+
+.rates .iconWrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.rates .item:nth-child(1) .head h3,
+.rates .item:nth-child(2) .head h3,
+.rates .item:nth-child(1) .head p,
+.rates .item:nth-child(2) .head p  {
+    color: #141414;;
+}
+
+.rates .item:nth-child(1) .head {
+    background: #FFFFFF;
+}
+.rates .item:nth-child(2) .head {
+    background: #E9D734;
+}
+.rates .item:nth-child(3) .head {
+    background: #7C2CFF;
+}
+
+.rates .item .oldPrice {
+    position: relative;
+    font-size: 30px;
+    color: #A1A1A1;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.rates .item .oldPrice::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 10px);
+    margin-left: -5px;
+    border: 1px solid #FF3838;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rates .item .newPrice {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.rates .mainButton {
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 235px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.rates a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+}
+
+.rates .secondBtn {
+    background: linear-gradient(258.35deg, #E8E8E8 42.6%, #A6A6A6 101.59%);
+    box-shadow: 0px 1px 0px #DADADA, 0px 3px 0px #C7C7C7;
+    color: #141414;
+}
+
+.rates .mentor {
+    background: #E9D734;
+    border-radius: 15px;
+    padding: 40px 35px;
+}
+
+.rates .mentor h3 {
+    font-size: 34px;
+    line-height: 38px;
+    text-align: center;
+    color: #141414;
+    margin-bottom: 13px;
+}
+
+.rates .spikelets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.rates .spikelets p {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: #1D1D1D;
+    max-width: 150px;
+}
+
+.rates .privilege {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+    margin-left: -21px;
+    justify-content: center;
+}
+
+.rates .privilege.second {
+    margin-left: 3px;
+}
+
+.rates .privilege img {
+    margin-top: 5px;
+}
+
+.rates .privilege p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #141414;
+}
+
+.rates .privilege span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #141414;
+}
+
+.rates .mobilePersonBg {
+    width: calc(100% + 70px);
+    margin: 0 -35px;
+}
+
+.rates .oneByOne {
+    padding: 19px 35px;
+    background: #141414;
+    border-radius: 150px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-38px);
+}
+
+.rates .oneByOne::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 25px solid;
+    border-bottom: 10px solid #141414;
+    top: -10px;
+    right: 28%;
+}
+
+.rates .mentor .price {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #141414;
+    margin-bottom: 13px;
+}
+
+.rates .mentor a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120.5%;
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    display: block;
+    color: #141414;
+}
+
+
+@media (min-width: 600px) {
+    .rates {
+        margin-bottom: 150px;
+    }
+}
