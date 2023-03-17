@@ -2204,4 +2204,59 @@ body {
     .speakers {
         margin-bottom: 130px;
     }
+
+    .speakers .titleWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    .speakers .titleWrap .title {
+        font-size: 100px;
+        line-height: 110px;
+    }
+
+    .speakers ul {
+        margin: 0;
+        flex-direction: row;
+        max-width: 1170px;
+        position: inherit;
+        transform: translateX(0);
+        left: 0;
+        justify-content: space-between;
+    }
+
+    .speakers .speakerBg {
+        margin: 0;
+        width: calc(50% - 15px);
+        background-size: contain;
+    }
+
+    .speakers .speakerBg:nth-child(1) {
+        background-image: url("../images/speakersIlyaDesk.png");
+        height: 818px;
+    }
+    .speakers .speakerBg:nth-child(2) {
+        background-image: url("../images/speakersAleksDesk.png");
+        height: 818px;
+        margin-top: 15px;
+    }
+    
+    .speakers .speakerBg h3 {
+        font-size: 50px;
+        line-height: 54px;
+        margin-bottom: 35px;
+    }
+
+    .speakers .speakerBg ol {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    @media (max-width: 1240px) {
+        .speakers .speakerBg {
+            padding-bottom: 160px;
+        }
+    }
 }
