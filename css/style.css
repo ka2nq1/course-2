@@ -34,7 +34,7 @@ p, span, button {
 
 body {
     background: #0C0C0C;
-    padding: 45px 0;
+    padding: 45px 0 240px 0;
 }
 
 .container {
@@ -144,7 +144,12 @@ body {
 }
 
 .hero .logoWrap span {
-    display: none;
+    font-family: 'Montserrat'!important;
+    color: #5B5B5B!important;
+    display: block;
+    font-weight: 400!important;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .hero .title {
@@ -222,7 +227,7 @@ body {
 
 @media (max-width: 600px) {
     body {
-        padding: 25px 0;
+        padding: 25px 0 80px 0;
     }
     .container {
         max-width: 600px;
@@ -2280,6 +2285,37 @@ body {
 .questions .questionsItem {
     border-top: 1px solid #7B7B7B;
     padding: 30px 0;
+    overflow: hidden;
+    max-height: 71px;
+    transition: max-height 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.questions .questionsItem:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    background-image: url("../images/topArrow.svg");
+    background-size: contain;
+    bottom: 4px;
+    right: 50%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    transition: transform 0.25s;
+}
+
+.questions .active:before {
+    transform: rotate(360deg);
+}
+
+.questions .questionsItem:nth-child(2) {
+    max-height: 87px;
+}
+
+.questions .questionsItem.active {
+    max-height: 300px!important;
 }
 
 .questions .questionsItem:last-child {
@@ -2298,6 +2334,12 @@ body {
     line-height: 15px;
 }
 
+@media (max-width: 599px) {
+    .questions .mainText {
+        max-width: 358px;
+    }
+}
+
 @media (min-width: 600px) {
     .questions {
         margin-bottom: 160px;
@@ -2309,6 +2351,13 @@ body {
         justify-content: space-between;
         align-items: center;
     }
+
+    .questions .questionsItem:before {
+        width: 14px;
+        height: 16px;
+        top: 48px;
+        right: 48px;
+    }
     
     .questions .titleWrap .title {
         text-align: start;
@@ -2318,6 +2367,11 @@ body {
 
     .questions .questionsItem {
         padding: 44px 70px;
+        max-height: 109px;
+    }
+
+    .questions .questionsItem:nth-child(2) {
+        max-height: 109px;
     }
 
     .questions .mainText {
@@ -2330,5 +2384,131 @@ body {
         font-size: 15px;
         line-height: 25px;
         max-width: 600px;
+    }
+}
+
+/* ==============================footer=========================== */
+
+.footer .logoWrap {
+    margin-bottom: 30px;
+}
+
+.footer .policy.desk {
+    display: none;
+}
+
+.footer .logoWrap .logo {
+    width: 154px;
+}
+
+.footer .tgWrap {
+    margin-bottom: 27px;
+}
+
+.footer .tgWrap .topText {
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 253px;
+    margin-bottom: 30px;
+}
+
+.footer .tgWrap .topText span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.footer .tgWrap .tgText {
+    border: 1px solid #888888;
+    border-radius: 80px;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 29px 0 16px;
+    color: #ffff;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+.footer .tgWrap img {
+    margin-right: 8px;
+    transform: translateY(2px);
+}
+
+.footer .policy {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: #8B8B8B;
+    display: inline-block;
+}
+
+.footer .policy.mobile {
+    margin-bottom: 44px;
+}
+
+.footer .fisher {
+    display: flex;
+    align-items: center;
+}
+
+.footer .fisher p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.footer .fisher span {
+    color: #4324FF;
+}
+
+.footer .fisher .desk {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer .container > * {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .footer .policy.desk {
+        display: block;
+    }
+
+    .footer .policy.mobile {
+        display: none;
+    }   
+    .footer .logo {
+        margin-bottom: 26px;
+        width: 264px!important;
+    }
+
+    .footer .tgWrap .topText {
+        font-size: 15px;
+        line-height: 30px;
+        max-width: 271px;
+    }
+
+    .footer .fisher p {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    
+    .footer .fisher .desk {
+        display: block;
+    }
+
+    .footer .fisher .mobile {
+        display: none;
     }
 }
