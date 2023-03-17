@@ -38,7 +38,7 @@ p, span, button {
 
 body {
     background: #0C0C0C;
-    padding: 45px 0 240px 0;
+    padding: 0px 0 240px 0;
 }
 
 .container {
@@ -75,6 +75,7 @@ body {
     position: relative;
     overflow: hidden;
     padding-bottom: 187px;
+    padding-top: 45px;
     z-index: 1;
     min-width: 1100px;
 }
@@ -231,7 +232,7 @@ body {
 
 @media (max-width: 600px) {
     body {
-        padding: 25px 0 80px 0;
+        padding: 0px 0 80px 0;
     }
     .container {
         max-width: 600px;
@@ -245,6 +246,7 @@ body {
         background-position: left top;
         background-repeat: no-repeat;
         padding-bottom: 60px;
+        padding-top: 25px;
     }
 
     .hero .person {
