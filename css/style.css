@@ -402,7 +402,7 @@ body {
 
 .advantages {
     overflow: hidden;
-    margin-bottom: 55px;
+    padding-bottom: 55px;
 }
 
 .advantages .title {
@@ -576,7 +576,7 @@ body {
 
     .advantages {
         min-width: 1100px;
-        margin-bottom: 150px;
+        padding-bottom: 50px;
     }
     
     .advantages ul {
@@ -648,7 +648,11 @@ body {
     .advantages li:nth-child(3):before {
         left: 50px;
         top: -40px;
+        background-position: 95px -359px;
         background-image: url("../images/advantagesCarDesk.png");
+    }
+    .advantages li:nth-child(3) {
+        padding-bottom: 100px;
     }
 }
 
@@ -932,6 +936,45 @@ body {
     display: flex;
     flex-direction: column;
     gap: 33px;
+}
+
+.program .moduleFisher {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    right: 50%;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+.program .moduleFisher p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@media (max-width: 599px) {
+    .program .moduleFisher {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        right: 20px;
+        left: inherit;
+        width: fit-content;
+        bottom: 40px;
+        transform: translateX(0);
+    }
+
+    .program .moduleFisher img {
+        width: 52px;
+    }
+    
+    .program .moduleFisher p {
+        font-size: 8px;
+        line-height: 10px;
+    }
 }
 
 .program .options {
@@ -1256,12 +1299,13 @@ body {
 
 @media (min-width: 600px) {
     .process {
-        margin-bottom: 135px;
+        margin-bottom: 5px;
     }
 
     .process .container {
         display: flex;
         overflow: hidden;
+        padding-bottom: 130px;
     }
 
     .process .title {
@@ -1297,6 +1341,7 @@ body {
         font-size: 15px;
         line-height: 20px;
         width: 300px;
+        transform: translateY(35px);
     }
 
     .process .infoWrap img {
@@ -1679,6 +1724,10 @@ body {
         margin-bottom: 70px;
     }
 
+    .rates .mainButton {
+        width: 296px;
+    }
+
     .rates .titleWrap .title {
         font-size: 100px;
     }
@@ -1837,7 +1886,7 @@ body {
     flex-direction: column;
     width: calc(100% - 90px);
     padding: 27px 26.5px 50px 26.5px;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     border-radius: 10px;
 }
 
@@ -1857,6 +1906,16 @@ body {
     border: 2px solid #FFFFFF;
     box-shadow: 0px 31px 36px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+}
+
+.successful .itc-slider:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    border-radius: 10px;
+    position: absolute;
 }
 
 .successful .itc-slider__item:nth-child(1) .pointPerson {
@@ -2024,8 +2083,8 @@ body {
     }
 
     .successful .itc-slider {
-        min-width: 1010px;
-        margin: 0 45px;
+        min-width: 1100px;
+        /* margin: 0 45px; */
     }
 
     .successful .pointWrap {
