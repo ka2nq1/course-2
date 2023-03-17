@@ -2170,10 +2170,24 @@ body {
     justify-content: flex-end;
 }
 
+@media (max-width: 450px) {
+    .speakers .speakerBg {
+        margin: 0;
+        padding: 115px 50px;
+        background-size: inherit;
+    }
+}
+
 @media (max-width: 400px) {
     .speakers .speakerBg {
         background-size: contain;
         justify-content: center;
+        background-position: 0 50px;
+    }
+}
+@media (max-width: 350px) {
+    .speakers .speakerBg {
+        background-position: 0 50px;
     }
 }
 
