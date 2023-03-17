@@ -1974,6 +1974,12 @@ body {
     bottom: -35px;
 }
 
+.successful .itc-slider__btn::before {
+    background-image: url("../images/arrowSlider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .successful .itc-slider__btn:hover,
 .successful .itc-slider__btn:focus {
     background-color: #4324FF;
@@ -1987,7 +1993,7 @@ body {
 .successful .itc-slider__btn_next {
     left: calc(50% + 50px);
     right: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(180deg);
 }
 
 @media (min-width: 600px) {
@@ -2012,6 +2018,56 @@ body {
         margin-top: 20px;
     }
 
+    .successful .itc-slider {
+        min-width: 1010px;
+        margin: 0 45px;
+    }
+
+    .successful .pointWrap {
+        flex-direction: row;
+        padding: 115px 70px;
+        min-width: 1010px;
+    }
+
+    .successful .pointA,
+    .successful .pointB {
+        width: 500px;
+        height: 333px;
+        padding: 61px 41px;
+        align-items: flex-start;
+    }
+
+    .successful .pointB {
+        padding-left: 151px;
+    }
+
+    .successful .pointA:before {
+        margin-top: -8px;
+        right: 0;
+        width: 270px;
+        height: calc(100% + 16px);
+    }
+    
+    .successful .pointB:before {
+        margin-bottom: -8px;
+        left: 0;
+        width: 270px;
+        height: calc(100% + 16px);
+    }
+
+    .successful .pointPerson {
+        width: 259px;
+        height: 259px;
+    }
+
+    .successful .pointPersonText {
+        transform: translateY(23px);
+        padding: 10px 28px;
+        max-width: 188px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
     .successful .itc-slider__item:nth-child(1) .pointPerson {
         background-image: url("../images/pointBotaDesk.jpg");
     }
@@ -2023,5 +2079,51 @@ body {
     }
     .successful .itc-slider__item:nth-child(4) .pointPerson {
         background-image: url("../images/pointBelevcevDesk.jpg");
+    }
+
+    .successful .pointA .pointTitle:first-child {
+        position: absolute;
+        top: -86px;
+        right: -160px;
+        width: 308px;
+        margin-bottom: 0;
+        font-size: 50px;
+        line-height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #141414;
+    }
+
+    .successful .pointTitle.sec {
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 26px!important;
+    }
+
+    .successful .pointSum {
+        height: 49px;
+        padding: 0 22px;
+        font-size: 35px;
+        line-height: 60px;
+        transform: translateY(-4px);
+        margin-left: 16px;
+    }
+
+    .successful .pointText {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 298px;
+        text-align: left;
+    }
+
+    .successful .itc-slider__btn {
+        background-color: #0C0C0C;
+        bottom: 20px;
+    }
+    
+    .successful .itc-slider__btn:hover,
+    .successful .itc-slider__btn:focus {
+        background-color: #0C0C0C;
     }
 }
