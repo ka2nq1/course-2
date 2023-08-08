@@ -178,6 +178,7 @@ body {
     position: absolute;
     left: -25px;
     top: -25px;
+    pointer-events: inherit!important;
     cursor: pointer;
     z-index: 1;
 }
