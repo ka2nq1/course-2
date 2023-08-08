@@ -28,4 +28,9 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Good-vibes-pro';
+    src: local('good-vibes-pro'), local('good-vibes-pro'), url('../fonts/good-vibes-pro.woff2') format('woff2'), url('../fonts/good-vibes-pro.woff') format('woff'), url('../fonts/good-vibes-pro.ttf') format('truetype');
+    font-style: normal;
+}
 
