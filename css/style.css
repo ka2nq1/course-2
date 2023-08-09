@@ -19,7 +19,7 @@ h1,
 h2,
 h3 {
     font-family: var(--title-font);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--main-text-color);
 }
 
@@ -31,7 +31,7 @@ h1 *,
 h2 *,
 h3 * {
     font-family: var(--title-font) !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     color: var(--accent-text-color) !important;
 }
 
@@ -613,7 +613,7 @@ body {
     color: #3CCDB2;
     font-family: 'Bebas Neue';
     font-size: 163px;
-    font-weight: 700;
+    font-weight: 600;
     display: inline-block;
     line-height: normal;
 }
@@ -658,7 +658,7 @@ body {
     .advantages ul .number {
         color: #3CCDB2;
         font-size: 150px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: normal;
     }
 
@@ -2250,12 +2250,12 @@ body {
     background: linear-gradient(0deg, #F8E0A4, #F8E0A4), #454545;
     margin-bottom: 13px;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 106%;
 }
 
 .students .list .point-a p:nth-child(2) {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     line-height: 154%;
     text-align: center;
@@ -2270,7 +2270,7 @@ body {
 }
 
 .students .list .point-b p:nth-child(2) {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     line-height: 154%;
     text-align: center;
@@ -2426,7 +2426,7 @@ body {
         width: 213px;
         height: 51px;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 154%;
 
     }
