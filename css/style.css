@@ -618,6 +618,10 @@ body {
     line-height: normal;
 }
 
+.advantages ul .imgWrap img {
+    width: 33px;
+    height: 33px;
+}
 .advantages ul p {
     color: #FFF;
     font-family: 'Montserrat';
