@@ -655,6 +655,12 @@ body {
         left: 145px;
     }
 
+    .advantages ul .imgWrap img {
+        width: 44px;
+        height: 44px;
+    }
+
+
     .advantages ul .number {
         color: #3CCDB2;
         font-size: 150px;
@@ -2285,7 +2291,7 @@ body {
 }
 
 .students .sectionTitle {
-    margin-bottom: 72px;
+    margin-bottom: 0px;
 }
 
 .itc-slider__item {
@@ -2715,7 +2721,7 @@ body {
 
     .footer .tgWrap .topText {
         font-size: 15px;
-        line-height: 30px;
+    
         max-width: 271px;
     }
 
