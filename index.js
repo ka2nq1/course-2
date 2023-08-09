@@ -24,3 +24,7 @@ for (let i = 0; i < questionsItem.length; i++) {
     });
 }
 
+{/* <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slider/itc-slider.min.css"></link> */}
